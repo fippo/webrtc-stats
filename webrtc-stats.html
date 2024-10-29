@@ -3438,6 +3438,12 @@ enum RTCStatsType {
                 <p>
                   The ICE username fragment as defined in [[!RFC5245]] section 7.1.2.3.
                 </p>
+                <p>
+                  For peer reflexive remote candidates, the user agent MUST leave the
+                  {{RTCIceCandidateStats/usernameFragment}} member as <code>null</code>
+                  in the {{RTCIceCandidateStats}} dictionary unless that usernameFragment
+                  has been signalled in a {{RTCPeerConnection/setRemoteDescription()}} call.
+                </p>
               </dd>
               <dt>
               <dt>
